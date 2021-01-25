@@ -29,13 +29,13 @@
 /persist         	emmc  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/persist                flags=display="persist";backup=1
 /logo            	emmc  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/logo               	  flags=display="logo";backup=1;flashimg=1
 /fbootlogo       	emmc  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/fbootlogo          	  flags=display="fbootlogo";backup=1;flashimg=1
-/system_root        ext4  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/system                 flags=backup=1;display="System";flashimg=1
-/system_image       emmc  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/system                 flags=backup=1;display="System_Image";flashimg=1
+/system           ext4  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/system                 flags=backup=1;display="System";flashimg=1
+/system_image     emmc  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/system                 flags=backup=1;display="System_Image";flashimg=1
 /vendor          	ext4  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/vendor             	  flags=display="vendor";backup=1;flashimg=1
 /product         	ext4  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/product
 /data            	f2fs  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/userdata               flags=encryptable=footer;length=-16384;encryptable=ice:aes-256-cts
 /cache           	ext4  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/cache              	  flags=backup=1;
-/mnt/vendor     	ext4  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/prodnv             	  flags=backup=1;display="prodnv"
+/prodnv     	    ext4  /dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/prodnv             	  flags=backup=1;display="prodnv"
 /external_sd	    vfat  /dev/block/mmcblk1p1	/dev/block/mmcblk1			     flags=display="External SDcard";storage;wipeingui;removable;backup=0
 /usbotg	            vfat  /dev/block/sda1		/dev/block/sda				     flags=display="Usb-Otg";storage;removable;backup=0
 
